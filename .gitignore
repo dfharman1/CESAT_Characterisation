@@ -9,7 +9,6 @@
 hw/vivado/p6003_2_47_151_old/
 
 hw/vivado/*/*/
-hw/vivado/*/*.xpr
 !hw/vivado/*/*.srcs/
 hw/vivado/*/*.srcs/**/bd/
 !hw/vivado/*/*.tcl
