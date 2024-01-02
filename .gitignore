@@ -2,6 +2,9 @@
 **/vivado*.log
 **/vivado*.jou 
 
+# Ignore the hidden xilinx folders
+**/.Xil/
+
 # Ignore all subdirectories of the vivado projects EXCEPT the src directory
 hw/vivado/p6003_2_47_151_old/
 
@@ -12,7 +15,4 @@ hw/vivado/*/*.srcs/**/bd/
 !hw/vivado/*/*.tcl
 
 # Ignore everything except scripts in the script directory
-scripts/**
-!scripts/vivado/**/batch/*.tcl
-!scripts/vivado/**/batch/*.py
-!scripts/**/*.py
+scripts/vivado/**/batch/
