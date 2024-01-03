@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="/home/fpga/Pentek/fdk/2020.2/p6003_2_47_151/p6003_2.xpr">
+<Project Version="7" Minor="54" Path="/home/fpga/git/CESAT_Characterisation/vivado/pentekBaseDesign/p6003_2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="621af629d360449780316e8a585123b6"/>
@@ -36,12 +36,12 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../Pentek/ip"/>
     <Option Name="IPOutputRepo" Val="C:/Pentek/FDK/2019.2/p6003_2_27_rev5/p6003_2.cache/ip"/>
     <Option Name="IPCachePermission" Val="disable"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
-    <Option Name="IPUserFilesDir" Val="$PPRDIR/../../2019.2/p6003_2_27_rev5/p6003_2.ip_user_files"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/../../../../Pentek/fdk/2019.2/p6003_2_27_rev5/p6003_2.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="SimIpAutoExportScripts" Val="FALSE"/>
@@ -186,15 +186,6 @@
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
       <Filter Type="Utils"/>
-      <File Path="$PSRCDIR/utils_1/imports/impl_6/p6003_2_routed.dcp">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PRUNDIR/impl_6/p6003_2_routed.dcp"/>
-          <Attr Name="ImportTime" Val="1548962383"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="AutoDcp" Val="1"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/bitworkaround.tcl">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -247,7 +238,7 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../git/CESAT_Characterisation/scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
@@ -257,7 +248,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="p6003_synth_1" Type="Ft3:Synth" SrcSet="p6003" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="p6003" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/p6003_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../git/CESAT_Characterisation/scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/p6003_synth_1">
+    <Run Id="p6003_synth_1" Type="Ft3:Synth" SrcSet="p6003" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="p6003" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/p6003_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/p6003_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
@@ -267,7 +258,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_6" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="A placement variation for SSI devices with more logic packing in each SLR." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../git/CESAT_Characterisation/scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/impl_6">
+    <Run Id="impl_6" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="A placement variation for SSI devices with more logic packing in each SLR." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/impl_6">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Performance_HighUtilSLRs" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
@@ -290,7 +281,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_7" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="To compensate for optimistic delay estimation, add extra delay cost to long distance and high fanout connections. low setting, least pessimistic)" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_7" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../git/CESAT_Characterisation/scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/impl_7">
+    <Run Id="impl_7" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="To compensate for optimistic delay estimation, add extra delay cost to long distance and high fanout connections. low setting, least pessimistic)" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_7" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/impl_7">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Performance_NetDelay_low" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
@@ -316,7 +307,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_8" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="Similar to Peformance_Explore, but enables the physical optimization step (phys_opt_design) with the Explore directive after routing." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../git/CESAT_Characterisation/scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/impl_8">
+    <Run Id="impl_8" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="Similar to Peformance_Explore, but enables the physical optimization step (phys_opt_design) with the Explore directive after routing." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/impl_8">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Performance_ExplorePostRoutePhysOpt" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
@@ -344,7 +335,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_9" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="To compensate for optimistic delay estimation, add extra delay cost to long distance and high fanout connections. (high setting, most pessimistic)" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../git/CESAT_Characterisation/scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/impl_9">
+    <Run Id="impl_9" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="constrs_1" Description="To compensate for optimistic delay estimation, add extra delay cost to long distance and high fanout connections. (high setting, most pessimistic)" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/impl_9">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Performance_NetDelay_high" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
@@ -367,7 +358,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="p6003_impl_1" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="p6003" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="p6003_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../git/CESAT_Characterisation/scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/p6003_impl_1">
+    <Run Id="p6003_impl_1" Type="Ft2:EntireDesign" Part="xczu47dr-ffvg1517-1-i" ConstrsSet="p6003" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="p6003_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../scripts/origBuild/C:/Pentek/FDK/2020.2/p6003_2_47/p6003_2.srcs/utils_1/imports/p6003_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>

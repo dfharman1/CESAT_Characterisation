@@ -1,17 +1,19 @@
-# Ignore Vivado logs and journals
+## Ignore Vivado logs and journals
 **/vivado*.log
 **/vivado*.jou 
+**/*.log
+**/*.xsa
 
 # Ignore the hidden xilinx folders
 **/.Xil/
+**/.gen/
 
 # Ignore all subdirectories of the vivado projects EXCEPT the src directory
-hw/vivado/p6003_2_47_151_old/
+hw/
+vivado/work/
+vivado/pentekBaseDesign/*/
+!vivado/pentekBaseDesign/*.tcl
+!vivado/pentekBaseDesign/*.xpr
+!vivado/pentekBaseDesign/*.srcs/
+vivado/pentekBaseDesign/*.srcs/**/bd/
 
-hw/vivado/*/*/
-!hw/vivado/*/*.srcs/
-hw/vivado/*/*.srcs/**/bd/
-!hw/vivado/*/*.tcl
-
-# Ignore everything except scripts in the script directory
-scripts/vivado/**/batch/
